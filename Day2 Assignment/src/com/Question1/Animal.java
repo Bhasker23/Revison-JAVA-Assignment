@@ -1,4 +1,4 @@
-package com.Question;
+package com.Question1;
 
 public class Animal{
 	
