@@ -23,3 +23,5 @@ public class ConstructorExamples {
 		}
 }
 
+/*Yes for the above code the super class construct will be called  automatically because  it extents super class any it will not give any error.*/
+
