@@ -1,0 +1,13 @@
+Problem 1 :
+
+Abstract Class : Identify The Output of following code
+
+
+Part 1 : Check Whether the below code will execute or not. Give Reason with your answer
+
+abstract class AbstractAlgorithm{
+	abstract void steps();
+}
+
+class Algorithm1 extends AbstractAlgorithm{
+}
