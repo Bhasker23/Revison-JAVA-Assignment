@@ -1,7 +1,4 @@
-Problem 1 :
-
-Abstract Class : Identify The Output of following code
-
+Problem 1 : Abstract Class : Identify The Output of following
 
 Part 1 : Check Whether the below code will execute or not. Give Reason with your answer
 
@@ -14,4 +11,64 @@ Part 1 : Check Whether the below code will execute or not. Give Reason with your
 	}
 	
 	
-Reason ->	This code will give us error because we are not overriding steps() method. 
+Reason ->	This code will give us error because we are not overriding steps() method.
+------------------------------------------------------------------------------------------
+
+
+
+Part 2 : Check Whether the below code will execute or not. Give Reason with your answer
+
+
+abstract class AbstractAlgorithm{
+	abstract void steps();
+}
+
+abstract class Algorithm1 extends AbstractAlgorithm{
+}
+
+ Reason -> This code will not give an error because Algorithm1 class is also a abstract class and we need to override methods
+ 	       inside this class.
+ 	       
+ 	       
+ -------------------------------------------------------------------------------------------------
+ 
+ Part 3 : Check Whether the below code will execute or not. Give Reason with your answer
+ 
+	 abstract class AbstractAlgorithm{
+		private int stepCount;
+	}
+	 
+	 
+Reason -> This will not give an error because private variable can be made inside this class.
+
+-------------------------------------------------------------------------------------------------
+
+Part 4 : Check Whether the below code will execute or not. Give Reason with your answer
+
+abstract class AbstractAlgorithm{
+	private int stepCount;
+	public int getStepCount(){
+		return stepCount;
+	}
+}
+
+
+Reason -> This will not give an error because we can make public methods also in abstract but we can not initiate them inside
+		  this class.
+		  
+
+-------------------------------------------------------------------------------------------------
+
+
+ 	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
