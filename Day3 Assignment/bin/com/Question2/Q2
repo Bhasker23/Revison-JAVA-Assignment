@@ -1,0 +1,178 @@
+Problem 2 : Interface Class : Identify The Output of following 
+
+
+Part 1 : Check Whether the below code will execute or not. Give Reason with your answer
+
+	interface Interface1{
+		void method1();
+	}
+	
+	interface Interface2 extends Interface1{
+		void method2();
+	}
+	
+	
+	Reason -> this code will not give error because we can extent one interface to another interface.
+	
+	
+---------------------------------------------------------------------------------------------------------------
+
+Part 2 : Check Whether the below code will execute or not. Give Reason with your answer
+
+
+interface Interface1{
+	void method1();
+}
+
+interface Interface2 extends Interface1{
+	void method2()
+}
+
+interface Implementation implements Interface2{
+	void method2()
+}
+
+
+Reason -> This code will give's an error because we can not implement one interface to another interface we can implement it 
+		  on a class but not on Interface.
+		  
+ 
+ --------------------------------------------------------------------------------------------------------------------------------
+ 
+
+Part 3 : Check Whether the below code will execute or not. Give Reason with your answer
+
+interface Interface1{
+	void method1();
+}
+
+interface Interface2 extends Interface1{
+	void method2()
+}
+
+interface Implementation implements Interface2{
+	void method1();
+	void method2();
+}
+
+
+Reason -> This code will give's an error because we can not implement one interface to another interface we can implement it 
+		  on a class but not on Interface.
+		  
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Part 4 : Check Whether the below code will execute or not. Give Reason with your answer.
+
+
+abstract class ImplementationAbstract implements Interface2{
+	public void method1() { }
+}
+
+Reason -> This code will not gives an error because a class can implements Interface it could be abstract or concrete.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+Part 5 : Check Whether the below code will execute or not. Give Reason with your answer
+
+
+interface Interface3 {
+	int test;
+}
+
+Reason-> This code will give us error because we have to initialize test variable because in Interface variable are by 
+		 default, public static final and that's why we have initialize it.
+
+
+__________________________________________________________________________________________________________________________________
+
+Part 6 : Check Whether the below code will execute or not. Give Reason with your answer
+
+
+interface Interface3 {
+	int test = 5;
+
+}
+
+Reason -> This will not give us error because we initialize test variables.
+
+
+-_________________________________________________________________________________________________________________________
+
+Part 7 : Check Whether the below code will execute or not. Give Reason with your answer
+
+interface Interface4{
+	default void print(){
+		System.out.println("default");
+	}
+}
+		
+		
+Reason -> This will not give's an error because now we can write default and static method inside the interface with their
+		  method body.
+		  						
+
+______________________________________________________________________________________________________________________________
+
+
+Part 8 : Check Whether the below code will execute or not. Give Reason with your answer
+
+
+interface Interface4{
+	default void print(){
+		System.out.println("default");
+	}
+}
+
+class Test implements Interface4{
+
+	
+	public static void main(String[] args){
+	
+		Test test = new Test();
+		test.print();
+	
+	}
+}
+
+Reason ->. This will not give us error because wet can not call the default method of interface inside class, withou overriding
+		   that method.
+		      
+
+_________________________________________________________________________________________________________________________
+
+
+Part 9 :Check Whether the below code will execute or not. Give Reason with your answer
+
+ interface Interface4{
+	default void print(){
+		System.out.println("default");
+	}
+}
+
+class Test implements Interface4{
+
+	@Override
+	default void print(){
+		System.out.println("default");
+	}
+	
+	public static void main(String[] args){
+	
+		Test test = new Test();
+		test.print();
+	
+	}
+}
+
+Reason ->. This will give us error because wet can not override the default method of interface inside class.
+
+
+_________________________________________________________________________________________________________________________
+
+
+
+
+
