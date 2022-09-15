@@ -5,9 +5,13 @@ Abstract Class : Identify The Output of following code
 
 Part 1 : Check Whether the below code will execute or not. Give Reason with your answer
 
-abstract class AbstractAlgorithm{
-	abstract void steps();
-}
-
-class Algorithm1 extends AbstractAlgorithm{
-}
+	abstract class AbstractAlgorithm{
+		abstract void steps();
+	}
+	
+	
+	class Algorithm1 extends AbstractAlgorithm{
+	}
+	
+	
+Reason ->	This code will give us error because we are not overriding steps() method. 
