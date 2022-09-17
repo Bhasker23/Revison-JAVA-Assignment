@@ -43,8 +43,7 @@ public class MobilePhone {
 		}
 		
 	}
-	
-	
+
 	public boolean updateContact(Contact old, Contact n) {
 		
 		boolean jwab = true;
@@ -66,6 +65,7 @@ public class MobilePhone {
 		
 		if (pos >= 0) {
 			myContacts.remove(pos);
+//			System.out.println(myContacts);
 			return jwab;
 		}else {
 			return jwab = false;

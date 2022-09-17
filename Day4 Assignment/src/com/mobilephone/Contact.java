@@ -27,6 +27,11 @@ public class Contact {
 			
 		return  new Contact(name, number);
 	}
+
+	@Override
+	public String toString() {
+		return "Contact Deatils -> name - " + name + ", number - " + number ;
+	}
 	
 	
 	
